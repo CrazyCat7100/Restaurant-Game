@@ -137,11 +137,20 @@ function showMenu() {
     <div class="menu-card ${class_}">
 
         <img src="img/menu/${myMenu[i].photo}" alt="" class="menu-card__image">
-        <h2 class="menu-card__title">${myMenu[i].title}</h2>
-        <h2 class="menu-card__block">Buy ${myMenu[i].block} More Items To Unblock!</h2>
-        <h2 class="menu-card__price">${myMenu[i].price}$</h2>
-        <button data-id="${myMenu[i].id}" class="buy_btn">Buy This</button>
-        <h2 class="menu-card__time">${myMenu[i].speed} Seconds Cook Time</h2>
+        <div class="menu-card__body">
+          <div class="menu-card__info">
+            <div  class="menu-card__texts">
+              <h2 class="menu-card__title">${myMenu[i].title}</h2>
+              <h2 class="menu-card__block">Buy ${myMenu[i].block} More Items To Unblock!</h2>
+              <h2 class="menu-card__price">${myMenu[i].price}$</h2>
+            </div>
+            <div class="timer">
+              <h2 class="menu-card__time" title="Seconds Cook Time">${myMenu[i].speed} </h2>
+              <img src="img/clock.png" alt="">
+            </div>
+          </div>
+          <button data-id="${myMenu[i].id}" class="buy_btn">Buy This</button>
+          </div>
         </div>
         `;
       }

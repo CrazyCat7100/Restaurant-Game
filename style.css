@@ -42,7 +42,9 @@ background: lightgrey;
 width: 48%;
 border-radius: 10px;
 padding: 10px;
-border: 5px solid black;
+display: flex;
+gap: 15px;
+/* border: 5px solid black; */
 }
 
 .block {
@@ -146,3 +148,50 @@ border: 5px solid black;
     .car {
       width: 300px;
     }
+
+.menu-card__body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.menu-card__info {
+
+}
+.menu-card__texts {
+
+}
+.timer {
+
+}
+.buy_btn {
+    background: linear-gradient(45deg, orange, pink);
+    border-radius: 7px;
+    padding: 10px 25px;
+    font-size: 20px;    
+    cursor: pointer;
+    box-shadow: 0 0 4px orange;
+}
+.buy_btn:hover {
+    box-shadow: 0 0 7px orange;
+}
+
+
+    /* <div class="menu-card ${class_}">
+
+        <img src="img/menu/${myMenu[i].photo}" alt="" class="menu-card__image">
+        <div class="menu-card__body">
+          <div class="menu-card__info">
+            <div  class="menu-card__texts">
+              <h2 class="menu-card__title">${myMenu[i].title}</h2>
+              <h2 class="menu-card__block">Buy ${myMenu[i].block} More Items To Unblock!</h2>
+              <h2 class="menu-card__price">${myMenu[i].price}$</h2>
+            </div>
+            <div class="timer">
+              <h2 class="menu-card__time" title="Seconds Cook Time">${myMenu[i].speed} </h2>
+              <img src="img/clock.png" alt="">
+            </div>
+          </div>
+          <button data-id="${myMenu[i].id}" class="buy_btn">Buy This</button>
+          </div>
+        </div> */
