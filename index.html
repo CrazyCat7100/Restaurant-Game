@@ -23,7 +23,16 @@
 </div>
 
 
-<img src="img/car.png" alt="" class="car">
+<svg class="road" width="1270" height="918" viewBox="0 0 1270 918" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 41H968.5C1054.5 35.1666 1226.9 79 1228.5 301C1230.1 523 1229.17 806.833 1228.5 921" stroke="black" stroke-width="80"/>
+    <path id="myPath"  d="M1 41H968.5C1054.5 35.1666 1226.9 79 1228.5 301C1230.1 523 1229.17 806.833 1228.5 921" stroke="#FFC700" stroke-width="20" stroke-linecap="round" stroke-dasharray="80 80"/>
+    <image href="img/car.png" width="150" transform="translate(-30, -30)">
+        <animateMotion repeatCount="1" dur="10s" rotate="auto" keyPoints="0; 0.9" keyTimes="0; 1" fill="freeze">
+         <mpath href="#myPath"/>
+        </animateMotion>
+    </image>
+</svg>
+
 
 <div class="modal">
     <h1 class="modal__title">Lorem, ipsum.</h1>
@@ -33,6 +42,7 @@
 <div class="money"> <span class="moneyText">1500</span>$</div>
 
 <script src="script.js"></script>
+
 
 </body>
 </html>

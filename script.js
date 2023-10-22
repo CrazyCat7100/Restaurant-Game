@@ -146,7 +146,7 @@ function showMenu() {
               <h2 class="menu-card__lock" title="Buy ${myMenu[i].block} More Items To Unblock!">${myMenu[i].block}</h2>
               </div>
               <div class="price">
-              <img src="img/lock.png" alt="">
+              <img src="img/money.png" alt="">
               <h2 class="menu-card__price">${myMenu[i].price}</h2>
               </div>
             </div>
